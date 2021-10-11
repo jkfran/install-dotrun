@@ -9,5 +9,5 @@ runs:
   steps:
     - name: Install and configure Dotrun
       run: |
-        snap install dotrun
+        sudo snap install dotrun
       shell: bash
