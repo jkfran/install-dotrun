@@ -9,5 +9,6 @@ runs:
   steps:
     - name: Install and configure Dotrun
       run: |
+        sudo rm -rf /etc/docker
         sudo snap install dotrun
       shell: bash
