@@ -1,0 +1,13 @@
+name: "Install Dotrun Action"
+author: "Canonical webteam <webteam@canonical.com>"
+description: "Installs and configures Dotrun"
+branding:
+  icon: "package"
+  color: "green"
+runs:
+  using: "composite"
+  steps:
+    - name: Install and configure Dotrun
+      run: |
+        snap install dotrun
+      shell: bash

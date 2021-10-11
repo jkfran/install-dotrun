@@ -1,0 +1,12 @@
+name: tests
+
+on: push
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: jkfran/install-dotrun@main
+    - name: Test dotrun
+      run: dotrun version
